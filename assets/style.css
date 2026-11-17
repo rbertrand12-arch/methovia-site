@@ -3,3 +3,43 @@
 @media(max-width:1000px){.hero-grid{gap:24px}.grid4{grid-template-columns:repeat(2,1fr)}.nav{gap:13px}.nav a{font-size:.82rem}.brand img{width:190px}.graphic-card{padding:25px}.hero-floating{right:-5px}}
 @media(max-width:760px){.container{width:min(100% - 36px,1144px)}.header-inner{height:76px}.brand img{width:180px}.menu-toggle{display:block}.nav{display:none;position:absolute;left:0;right:0;top:76px;background:var(--cream);padding:24px 18px 30px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--border);gap:0;box-shadow:0 18px 25px rgba(25,44,52,.07)}.nav[data-open=true]{display:flex}.nav a{font-size:1rem;padding:13px 8px}.nav .nav-cta{justify-content:center;margin-top:14px}.hero{padding:55px 0 80px}.hero-grid,.editorial{grid-template-columns:1fr}.hero-graphic{min-height:430px;margin-top:8px}.hero h1{font-size:clamp(2.6rem,9vw,4rem)}.section{padding:64px 0}.section-tight{padding:43px 0}.grid3,.grid2{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}.editorial{gap:30px}.founder-graphic{height:310px}.cta-block{padding:32px;grid-template-columns:1fr;gap:20px}.cta-block .btn{justify-self:start}.page-hero{padding:65px 0 55px}.divider-heading{align-items:start;flex-direction:column;gap:0}.steps{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr;gap:30px}.footer-grid>div:first-child{grid-column:1/-1}.form-grid{grid-template-columns:1fr}.callout{flex-direction:column;align-items:start}}
 @media(max-width:450px){.hero-graphic{min-height:415px}.graphic-card{padding:23px;width:100%}.hero-floating{font-size:.7rem;bottom:5px}.grid4,.steps{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-grid>div:first-child{grid-column:auto}.panel{padding:25px}.form-card{padding:24px}.cta-block{padding:29px}.btn{width:100%}.hero-actions{align-items:stretch}.brand img{width:170px}}
+
+/* MÉTHOVIA — harmonisation éditoriale et identité novembre 2026 */
+.site-header{background:var(--navy);border-bottom:1px solid rgba(255,255,255,.16);box-shadow:0 8px 25px rgba(23,44,55,.13)}
+.header-inner{height:94px}
+.site-header .brand img{width:225px;height:auto}
+.nav{gap:24px}
+.nav a{font-size:1.01rem;letter-spacing:-.015em;color:#f4f7f3;font-weight:680}
+.nav a:hover,.nav a[aria-current=page]{color:#cae6d2}
+.nav a[aria-current=page]:not(.nav-cta){text-decoration:underline;text-decoration-color:var(--sage);text-decoration-thickness:2px;text-underline-offset:10px}
+.nav .nav-cta{background:#dce8dd;color:var(--navy-dark);font-size:.97rem;font-weight:770;padding:12px 19px}
+.nav .nav-cta:hover{background:#fff;color:var(--navy-dark)}
+.menu-toggle{color:#fff;background:transparent;border-color:rgba(255,255,255,.34)}
+.menu-toggle:hover{background:rgba(255,255,255,.08)}
+.home-page .intro>.eyebrow,.home-page #fondateur .eyebrow{font-size:1.12rem;font-weight:780;letter-spacing:.045em;text-transform:none;color:var(--navy);margin-bottom:18px}
+.home-page .intro>.eyebrow:before,.home-page #fondateur .eyebrow:before{width:32px;height:3px;background:var(--sage-dark)}
+.hero-grid{grid-template-columns:1.05fr .95fr;gap:40px}
+.hero-photo{position:relative;min-height:540px;border-radius:34px;overflow:hidden;box-shadow:0 28px 70px rgba(39,61,75,.16);background:#e2e5dc}
+.hero-photo img{width:100%;height:540px;object-fit:cover;object-position:65% center;display:block}
+.hero-photo:after{content:'';pointer-events:none;position:absolute;inset:0;background:linear-gradient(20deg,rgba(23,45,57,.40) 0%,transparent 39%)}
+.hero-photo-arc{position:absolute;border:2px solid rgba(255,255,255,.82);width:145%;height:145%;border-radius:50%;left:-66%;top:-23%;pointer-events:none;z-index:1}
+.hero-photo-note{position:absolute;z-index:2;left:25px;bottom:24px;max-width:250px;border-radius:16px;color:#fff;background:rgba(39,61,75,.87);padding:15px 19px;font-weight:700;line-height:1.4;backdrop-filter:blur(8px)}
+.value-ribbon{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.value-ribbon-inner{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:25px 0}
+.value-ribbon-item{display:flex;gap:13px;align-items:center;min-width:0;padding:6px 18px;border-right:1px solid var(--border)}
+.value-ribbon-item:first-child{padding-left:0}.value-ribbon-item:last-child{border-right:none;padding-right:0}
+.value-ribbon-icon{font-size:1.75rem;line-height:1;color:var(--sage-dark);min-width:34px;text-align:center}
+.value-ribbon-labels{display:flex;flex-direction:column;line-height:1.33;gap:3px}
+.value-ribbon-labels strong{color:var(--navy);font-size:.91rem}.value-ribbon-labels small{color:var(--muted);font-size:.75rem}
+.offer-modality{font-size:.88rem!important;line-height:1.55;background:#edf2ee;border-radius:11px;padding:11px 14px;margin:17px 0 12px!important;color:var(--navy)!important}
+.offer-modality strong{font-weight:780}
+.modality-line{font-size:.97rem;font-weight:650;line-height:1.6;max-width:795px;padding:13px 19px;border-left:4px solid var(--sage-dark);background:rgba(255,255,255,.69);border-radius:0 12px 12px 0;margin:20px 0 22px;color:var(--navy)}
+.contact-intervention{background:#edf2ee;padding:16px 19px;border-radius:13px;border-left:4px solid var(--sage-dark);color:var(--ink)!important;line-height:1.75}
+@media(max-width:1000px){.site-header .brand img{width:196px}.nav{gap:13px}.nav a{font-size:.9rem}.nav .nav-cta{font-size:.88rem;padding:11px 14px}.hero-photo,.hero-photo img{min-height:480px;height:480px}.value-ribbon-item{padding:5px 12px}}
+@media(max-width:760px){.header-inner{height:76px}.site-header .brand img{width:186px}.nav{top:76px;background:var(--navy);border-bottom:1px solid rgba(255,255,255,.15);box-shadow:0 18px 25px rgba(25,44,52,.16)}.nav a{color:#fff;font-size:1rem}.nav .nav-cta{background:#dce8dd;color:var(--navy);font-size:1rem}.hero-grid{grid-template-columns:1fr}.hero-photo{min-height:345px}.hero-photo img{height:345px;min-height:345px;object-position:65% center}.hero-photo-note{font-size:.83rem}.value-ribbon-inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 0;padding:18px 0}.value-ribbon-item:nth-child(2){border-right:0}.value-ribbon-item:nth-child(3){padding-left:0}.home-page .intro>.eyebrow,.home-page #fondateur .eyebrow{font-size:1.08rem}}
+@media(max-width:450px){.site-header .brand img{width:174px}.hero-photo{min-height:290px}.hero-photo img{height:290px;min-height:290px}.hero-photo-note{left:14px;bottom:15px;font-size:.74rem;padding:11px 14px}.value-ribbon-icon{min-width:20px;font-size:1.3rem}.value-ribbon-item{gap:9px;padding:8px!important}.value-ribbon-labels strong{font-size:.8rem}.value-ribbon-labels small{font-size:.68rem}.home-page .intro>.eyebrow,.home-page #fondateur .eyebrow{font-size:1.14rem}}
+
+/* Illustrations discrètes : conseil en présentiel et formations en visio */
+.offer-photo{float:right;object-fit:cover;object-position:50% 42%;width:142px;height:176px;border-radius:19px;margin:0 0 16px 22px;box-shadow:0 8px 22px rgba(23,45,57,.10)}
+#notre-offre .panel{display:flow-root}
+@media(max-width:450px){.offer-photo{width:108px;height:152px;margin-left:15px}}
