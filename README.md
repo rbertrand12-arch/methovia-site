@@ -1,25 +1,22 @@
-# MÉTHOVIA — Site vitrine
+# MÉTHOVIA — site vitrine pour LWS
 
-Site statique en français, sans framework ni dépendance externe, pour la présentation de MÉTHOVIA : conseil en organisation, accompagnement des indépendants et TPE, formations professionnelles immobilières.
+Source du site methovia.fr. Les fichiers du site sont en HTML/CSS/JS sans framework ni Netlify.
+
+## Mise en ligne sur LWS
+Déposer **le contenu du ZIP de publication**, pas le ZIP lui-même, à la racine web `htdocs/` sur LWS Panel (ou la racine web explicitement indiquée par le panneau d'hébergement). Le fichier `index.html` doit être directement dans la racine web.
+
+Activez SSL Let's Encrypt et la redirection HTTPS; vérifiez que `methovia.fr` et `www.methovia.fr` sont couverts si le `www` est utilisé.
+
+## Contact
+La formule Domaine LWS n'autorise pas PHP; le formulaire ouvre la messagerie du visiteur avec son message prérempli, sans prétendre envoyer le message directement. La boîte `contact@methovia.fr` doit être opérationnelle avant ouverture publique.
+
+## Informations légales
+SAS RBI, SIREN 952 912 533, 83A rue des Alliés, 42100 Saint-Étienne. À vérifier avant publication : capital social actuel, numéro TVA et numéro de téléphone professionnel de l'éditeur (à ajouter aux mentions légales).
+
+## SEO
+Indexation activée sur les pages publiques, fichier `sitemap.xml`, canoniques `https://methovia.fr/` et `robots.txt`.
 
 ## Pages
-- `/` : accueil, cibles, bénéfices, mot du fondateur
-- `/accompagnement/` : 6 prestations P01–P06 et 3 packs, sans prix
-- `/formations-immobilieres/` : catalogue IM01–IM12, formations synchrones en visio, volet investisseurs
-- `/contact/` : formulaire de contact compatible Netlify Forms
-- `/mentions-legales/` et `/confidentialite/` : pages à compléter avant publication officielle
+Accueil, Accompagnement, Formations immobilières, Contact, Mentions légales, Confidentialité, Merci, 404.
 
-## Mise en ligne gratuite
-1. Créer un dépôt GitHub **indépendant** `methovia-site` et y importer le contenu de ce dossier (ne pas placer dans MotoStatix).
-2. Dans Netlify : Add new project > Import from Git > GitHub > `methovia-site`. Build command vide, publish directory `.`. Ou utiliser Netlify Drop pour un premier déploiement manuel.
-3. L'URL gratuite sera de type `nom-du-projet.netlify.app` ; aucun domaine payant requis.
-4. Mettre à jour l'identité de l'éditeur, SIREN, adresse, contact et informations de l'hébergeur dans `/mentions-legales/` et l'adresse du responsable des données dans `/confidentialite/`.
-5. Vérifier les obligations RGPD, déclarations de formation, et mentions commerciales avant diffusion large.
-6. Après validation juridique et de marque, remplacer `robots.txt` et retirer la directive `X-Robots-Tag` dans `netlify.toml`, puis ajouter un sitemap et les canoniques définitives.
-
-## Notes
-- Contact : le formulaire Netlify Forms conserve les soumissions dans le tableau de bord Netlify ; une notification e-mail doit être configurée dans Netlify pour recevoir des alertes.
-- Site sans traqueurs, pixels marketing ou cookies de mesure.
-- Les logos proviennent du kit MÉTHOVIA précédemment validé.
-- Le nom MÉTHOVIA reste à vérifier juridiquement avant diffusion commerciale.
-- Ne jamais placer de secrets ou d'identifiants dans ce dépôt.
+Les textes relatifs à l'offre et la formation ne présument d'aucune qualification ou certification réglementaire.

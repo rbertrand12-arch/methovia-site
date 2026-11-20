@@ -43,3 +43,11 @@
 .offer-photo{float:right;object-fit:cover;object-position:50% 42%;width:142px;height:176px;border-radius:19px;margin:0 0 16px 22px;box-shadow:0 8px 22px rgba(23,45,57,.10)}
 #notre-offre .panel{display:flow-root}
 @media(max-width:450px){.offer-photo{width:108px;height:152px;margin-left:15px}}
+
+/* Contact public sur hébergement HTML : e-mail préparé localement, sans serveur. */
+.contact-email-info{margin-top:23px;padding:18px 20px;border-radius:16px;background:#eaf0eb;border:1px solid #ceddd2;color:#273d4b;font-size:.9rem;line-height:1.7}
+.contact-email-info p{margin:0 0 12px}
+.contact-email-info p:last-child{margin-bottom:0}
+.contact-email-info a{color:#285945;font-weight:760;text-decoration:underline;text-underline-offset:3px}
+.email-feedback{margin-top:15px;border-left:3px solid #557a65;padding:12px 15px;background:white;border-radius:0 10px 10px 0}
+.mini-confidentialite{font-size:.83rem}
